@@ -5,7 +5,7 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /app && mkdir /data \
-  && /usr/bin/wget http://otgw.tclcode.com/download/otmonitor-x64 -O /app/otmonitor \
+  && /usr/bin/wget http://otgw.tclcode.com/download/otmonitor-aarch64 -O /app/otmonitor \
   && chmod +x /app/otmonitor
 
 CMD ["/app/otmonitor", "--daemon", "-f", "/data/otmonitor.conf"]
