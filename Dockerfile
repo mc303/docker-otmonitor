@@ -1,7 +1,3 @@
-FROM docker.io/project31/aarch64-alpine-qemu:3.5-7
-
-RUN [ "cross-build-start" ]
-
 FROM python:3.6
 
 RUN apt-get update \
@@ -13,5 +9,3 @@ RUN mkdir /app && mkdir /data \
   && chmod +x /app/otmonitor
 
 CMD ["/app/otmonitor", "--daemon", "-f", "/data/otmonitor.conf"]
-
-RUN [ "cross-build-end" ]
