@@ -1,6 +1,6 @@
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/S6S116FB5)
 
 # Docker OpenTherm Monitor
+this conainer is based on basschipper/docker-otmonitor 
 
 ## Introduction
 The Opentherm Monitor is a small utility that is intended to help you configure and monitor your opentherm gateway (OTGW).
@@ -11,7 +11,7 @@ Depending on your configuration you would start the image with something like:
 ```bash
 docker run -d -p 8080:8080 \
   -v $(pwd)/otmonitor.conf:/data/otmonitor.conf
-  basschipper/docker-otmonitor:latest
+  bmc303/docker-otmonitor-aarch64:latest
 ```
 
 ## More info
