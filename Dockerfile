@@ -1,4 +1,4 @@
-FROM python:3.6
+FROM arm64v8/python:3.6-alpine
 
 RUN apt-get update \
   && apt-get install -y wget python3-tk \
